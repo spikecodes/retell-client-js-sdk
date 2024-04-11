@@ -28,7 +28,7 @@ export class RetellWebClient extends EventEmitter {
   private captureNode: ScriptProcessorNode | null = null;
   private audioData: Float32Array[] = [];
   private audioDataIndex: number = 0;
-  private isTalking: boolean = false;
+  public isTalking: boolean = false;
 
   constructor(customEndpoint?: string) {
     super();
